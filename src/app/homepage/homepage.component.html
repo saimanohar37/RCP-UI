@@ -1,0 +1,51 @@
+<app-app-navbar></app-app-navbar>
+<div class="col-12" >
+    <div class="row mt-3">
+        <div class="col-4">
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Data Source
+                </button>
+                <div class="dropdown-menu" style="width: 100% !important;" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" [routerLink]="['/home/internal-ds']">Add New Internal Data Source</a>
+                    <a class="dropdown-item" [routerLink]="['/home/external-ds']">Add New External Data Source</a>
+                    <a class="dropdown-item" [routerLink]="['/home/existing-ds']">Use Existing Data Source</a>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="col-4">
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Data Science Platforms
+                </button>
+                <div class="dropdown-menu" style="width: 100% !important;" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" [routerLink]="['/home/r-dsplatform']">R</a>
+                    <a class="dropdown-item" [routerLink]="['/home/python-dsplatform']">Python</a>
+                </div>
+            </div>
+    
+        </div>
+        <div class="col-4">
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Reports
+                </button>
+                <div class="dropdown-menu" style="width: 100% !important;" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" [routerLink]="['/home/existing-reports']">Existing Reports</a>
+                    <a class="dropdown-item" [routerLink]="['/home/new-reports']">New Reports</a>
+                </div>
+            </div>
+    
+        </div>
+    
+    </div>
+    <div class="container-fluid">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
