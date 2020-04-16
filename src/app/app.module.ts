@@ -15,11 +15,13 @@ import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
     AppNavbarComponent,
+    
 
 
 
