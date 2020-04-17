@@ -1,13 +1,15 @@
 <!-- Image and text -->
 <nav class="navbar navbar-light bg-light fdaheader p-3">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" [routerLink]="['/home']">
       <img src="assets/logo/us-food-and-drug-administration-fda-logo-vector.svg" width="230" height="230" class="d-inline-block align-top" alt="">
 
     </a>
+<a class="btn btn-secondary btn-sm text-white d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" style="border: 1px solid #daaa00;" [routerLink]="['/login']" >Logout</a> 
+
   </nav>
 
   <nav class="navbar" style="background-color: rgb(209, 206, 206)">
-    <a class="navbar-brand" href="#" style="font-size: 22px;color: rgb(73, 71, 71);">
+    <div class="navbar-brand" style="font-size: 22px;color: rgb(73, 71, 71);">
       Resource Capacity Planning
-    </a>
+    </div>
   </nav>

@@ -1,3 +1,8 @@
 .fdaheader{
 background-color: #001871 !important;
 }
+
+.btn {
+text-transform: none;
+
+}

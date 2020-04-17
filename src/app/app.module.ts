@@ -10,26 +10,18 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 
-
-
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
-    AppNavbarComponent,
-    
-
-
+    AppNavbarComponent
 
   ],
   imports: [
     BrowserModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
