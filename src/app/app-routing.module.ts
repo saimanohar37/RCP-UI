@@ -19,7 +19,7 @@ import { PythondsplatformComponent } from './homepage/pythondsplatform/pythondsp
 import { ExistingreportsComponent } from './homepage/existingreports/existingreports.component';
 import { NewreportsComponent } from './homepage/newreports/newreports.component';
 
-import { ResetpasswordComponent } from './login/resetpassword/resetpassword.component';
+// import { ResetpasswordComponent } from './login/resetpassword/resetpassword.component';
 
 
 // Add routes to this array //
@@ -66,10 +66,10 @@ var routes: Routes = [
       }
     ]
   },
-  {
-    path: "reset",
-    component: ResetpasswordComponent
-  },
+  // {
+  //   path: "reset",
+  //   component: ResetpasswordComponent
+  // },
 
   {
     path: "**",
@@ -95,8 +95,8 @@ export const routingComponents = [
   RdsplatformComponent,
   PythondsplatformComponent,
   ExistingreportsComponent,
-  NewreportsComponent,
-  ResetpasswordComponent,
+  NewreportsComponent
+  // ResetpasswordComponent,
 ]
 
 
