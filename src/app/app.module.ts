@@ -9,19 +9,23 @@ import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
+import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
+import 'babel-polyfill';
+import Amplify from 'aws-amplify';
+import amplify from '../aws-exports';
+Amplify.configure(amplify);
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
     AppNavbarComponent
-
   ],
   imports: [
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-  
+    AmplifyUIAngularModule
   ],
   providers: [],
   bootstrap: [AppComponent]

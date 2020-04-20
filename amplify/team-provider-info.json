@@ -1,0 +1,64 @@
+{
+    "ddarcpenv": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-rcp-ui-ddarcpenv-133443-authRole",
+            "UnauthRoleArn": "arn:aws:iam::982304932971:role/amplify-rcp-ui-ddarcpenv-133443-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::982304932971:role/amplify-rcp-ui-ddarcpenv-133443-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-rcp-ui-ddarcpenv-133443-deployment",
+            "UnauthRoleName": "amplify-rcp-ui-ddarcpenv-133443-unauthRole",
+            "StackName": "amplify-rcp-ui-ddarcpenv-133443",
+            "StackId": "arn:aws:cloudformation:us-east-1:982304932971:stack/amplify-rcp-ui-ddarcpenv-133443/bc6e3200-80d1-11ea-bef7-0a3fc8cbcb75",
+            "AmplifyAppId": "d1zpnbnt01vu1c"
+        },
+        "categories": {
+            "auth": {
+                "rcpuia5423cbd": {},
+                "rcpui34f7ae2e": {},
+                "rcpui695fba2f": {}
+            }
+        }
+    },
+    "rcpenv": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-rcp-ui-rcpenv-151133-authRole",
+            "UnauthRoleArn": "arn:aws:iam::982304932971:role/amplify-rcp-ui-rcpenv-151133-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::982304932971:role/amplify-rcp-ui-rcpenv-151133-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-rcp-ui-rcpenv-151133-deployment",
+            "UnauthRoleName": "amplify-rcp-ui-rcpenv-151133-unauthRole",
+            "StackName": "amplify-rcp-ui-rcpenv-151133",
+            "StackId": "arn:aws:cloudformation:us-east-1:982304932971:stack/amplify-rcp-ui-rcpenv-151133/412e30f0-80df-11ea-a7ad-126c97cb5bc1",
+            "AmplifyAppId": "d13hdqmm9rw4qc"
+        },
+        "categories": {
+            "auth": {
+                "rcpui34f7ae2e": {},
+                "rcpui695fba2f": {},
+                "rcpuia5423cbd": {},
+                "rcpuia2eff8d9": {}
+            }
+        }
+    },
+    "rcpddaenv": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-rcp-ui-rcpddaenv-152130-authRole",
+            "UnauthRoleArn": "arn:aws:iam::982304932971:role/amplify-rcp-ui-rcpddaenv-152130-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::982304932971:role/amplify-rcp-ui-rcpddaenv-152130-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-rcp-ui-rcpddaenv-152130-deployment",
+            "UnauthRoleName": "amplify-rcp-ui-rcpddaenv-152130-unauthRole",
+            "StackName": "amplify-rcp-ui-rcpddaenv-152130",
+            "StackId": "arn:aws:cloudformation:us-east-1:982304932971:stack/amplify-rcp-ui-rcpddaenv-152130/a65e77e0-80e0-11ea-979c-12b44143da02",
+            "AmplifyAppId": "d1zpnbnt01vu1c"
+        },
+        "categories": {
+            "auth": {
+                "rcpui34f7ae2e": {},
+                "rcpui695fba2f": {},
+                "rcpuia5423cbd": {},
+                "rcpui1a3ff63b": {}
+            }
+        }
+    }
+}

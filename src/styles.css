@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --amplify-primary-color: #021771;
+    --amplify-secondary-color: #021771;
+    --amplify-tertiary-color: #021771;
+    --amplify-primary-color: #021771;
+    --amplify-primary-tint: #021771;
+    --amplify-primary-shade: #021771;
+    --amplify-secondary-color: #021771;
+    --amplify-tertiary-color: #021771;
+}
+
+:root:hover{
+    --amplify-primary-color: #021771;
+    --amplify-secondary-color: #021771;
+    --amplify-tertiary-color: #021771;
+}
+
+:host{
+    --link-active: #021771;
+    --link-hover: #021771;
+}
+
