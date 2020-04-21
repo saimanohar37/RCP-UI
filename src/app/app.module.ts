@@ -13,13 +13,17 @@ import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
 import 'babel-polyfill';
 import Amplify from 'aws-amplify';
 import amplify from '../aws-exports';
+import { BottomNavComponent } from './homepage/bottom-nav/bottom-nav.component';
+
 Amplify.configure(amplify);
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
-    AppNavbarComponent
+    AppNavbarComponent,
+    BottomNavComponent,
+   
   ],
   imports: [
     BrowserModule,

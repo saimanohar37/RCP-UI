@@ -1,0 +1,47 @@
+.btn {
+    border-radius: 8px;
+    transition-duration: 0.3s;
+    transition-property: box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-image: none;
+    border: 0;
+    box-shadow: none;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+    width: 100% !important;
+    min-width: none;
+    padding: 0.8rem 0.8rem;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.btn-group, .btn-group-vertical {
+    border-radius: 2px;
+    background-color: none !important;
+    box-shadow: none;
+    display: -ms-inline-flexbox;
+    display: block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.dropdown-item {
+    background-color: #001871;
+    color: white;
+}
+
+.dropdown-menu{
+    border-top: 6px solid #2e73dc;
+    padding: 0 !important;
+}
+
