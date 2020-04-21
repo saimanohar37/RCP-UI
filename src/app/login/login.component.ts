@@ -30,18 +30,11 @@ export class LoginComponent implements OnInit{
     console.log(this.isLoggedIn);
     this.authService.isLoggedIn$.subscribe(
       isLoggedIn => (this.isLoggedIn = isLoggedIn)
-
-<<<<<<< HEAD
     );
     this.authService.auth$.subscribe(({id, username, email}) => {
       this.user = {id, username, email};
     });
   }
-=======
-  // login() {
-  //   this.router.navigate(["/home"])
-  // }
->>>>>>> 2605be94cee3659200445b6a77cb42a5750d1255
 
 }
 

@@ -43,7 +43,7 @@ export class AuthService {
       },
       (_err) => {
         this._authState.next(initialAuthState);
-        this.router.navigate(['/login']);
+        //this.router.navigate(['/login']);
       }
     );
 
