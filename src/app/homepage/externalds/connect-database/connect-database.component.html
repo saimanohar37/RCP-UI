@@ -1,3 +1,125 @@
-<p>
-  connect-database works!
-</p>
+<h5 class="p-3" style="background-color: silver;">
+  Database Connection
+</h5>
+<div class="card border shadow-none">
+  <div style="border-bottom: 2px solid silver;">
+    <h5 class="p-3" style="background-color: white; border-bottom: 2px solid silver;">
+      Connect to Database
+    </h5>
+    <div class="pb-3 pl-3">
+      <span style="font-size: 16px;">
+        <b>Select your database</b>
+      </span><br><br>
+      <span style="font-size: 14px;">
+        PostgreSql Standard Driver
+      </span>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div class="row">
+        <div class="col-3">
+          <ul class="list-group">
+            <li class="list-group-item">All</li>
+            <li class="list-group-item active">Popular</li>
+            <li class="list-group-item active">SQL</li>
+            <li class="list-group-item active">No SQL</li>
+            <li class="list-group-item active">Analytics</li>
+            <li class="list-group-item active">Time Series</li>
+            <li class="list-group-item active">Embedded</li>
+            <li class="list-group-item active">Hadoop</li>
+            <li class="list-group-item active">Full Text Search</li>
+            <li class="list-group-item active">Graph Databases</li>
+          </ul>
+        </div>
+        <div class="col-9">
+          <div>
+            <div style="max-height: 350px; overflow-y: scroll; overflow-x: hidden;">
+              <div class="row p-2">
+                <div class="col-3 p-3 imageClick imageClick">
+                  <img src="assets/Databases/postgresql.png" (click)="activateButton()" height="80" alt="">
+                </div>
+                <div class="col-3 p-3 imageClick imageClick">
+                  <img src="assets/Databases/oracle.png" (click)="activateButton()" height="20" class="mt-5" alt="">
+                </div>
+                <div class="col-3 p-3 imageClick imageClick">
+                  <img src="assets/Databases/SQLite370.svg.png" height="80" alt="">
+                </div>
+                <div class="col-3 p-3 imageClick imageClick">
+                  <img src="assets/Databases/athena_small.png" height="80" alt="">
+                </div>
+                <div class="col-3 p-3 imageClick imageClick">
+                  <img src="assets/Databases/Azure-SQL.jpg" height="80" alt="">
+                </div>
+                <div class="col-3 p-3 imageClick imageClick">
+                  <img src="assets/Databases/Clickhouse.png" height="80" alt="">
+                </div>
+                <div class="col-3 p-3 imageClick imageClick">
+                  <img src="assets/Databases/clipart720844.png" height="80" alt="">
+                </div>
+                <div class="col-3 p-3 imageClick imageClick">
+                  <img src="assets/Databases/drill.png" height="80" alt="">
+                </div>
+                <div class="col-3 p-3 imageClick imageClick">
+                  <img src="assets/Databases/IBM-DB2.png" height="80" alt="">
+                </div>
+
+                <div class="col-3 p-3 imageClick imageClick">
+                  <img src="assets/Databases/Phoenix.png" height="80" alt="">
+                </div>
+                <div class="col-3 p-3 imageClick imageClick">
+                  <img src="assets/Databases/pngfuel.com.png" height="80" alt="">
+                </div>
+                <!-- <div class="col-3 p-3 imageClick imageClick">
+                  <img src="assets/Databases/hive.png" height="80" alt="">
+                </div> -->
+                <div class="col-3 p-3 imageClick imageClick">
+                  <img src="assets/Databases/mariadb.png" height="80" alt="">
+                </div>
+                <div class="col-3 p-3 imageClick imageClick">
+                  <img src="assets/Databases/impala.png" height="80" alt="">
+                </div>
+                <div class="col-3 p-3 imageClick imageClick">
+                  <img src="assets/Databases/ms_sql.png" height="80" alt="">
+                </div>
+                <!-- <div class="col-3 p-3 imageClick imageClick">
+                  <img src="assets/Databases/amazon-athena-cover.png" height="80" alt="">
+                </div> -->
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  <div class="card-footer">
+    <div class="inline-block float-right">
+      <button disabled class="btn btn-sm btn-primary mr-5">
+        Test Connection
+      </button>
+
+      <button disabled class="btn btn-sm btn-primary mr-3">
+        Back
+      </button>
+
+
+      <button [disabled]="this.activate" (click)="nextScreen()" class="btn btn-sm btn-success mr-3">
+        Next
+      </button>
+
+
+      <button disabled class="btn btn-sm btn-primary mr-5">
+        Finish
+      </button>
+
+      <button disabled class="btn btn-sm btn-primary mr-5">
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>
