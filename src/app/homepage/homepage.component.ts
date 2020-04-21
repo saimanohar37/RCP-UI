@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-homepage',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor() { }
+  routePath;
+  routeHide: boolean = false;
+  constructor(private route: ActivatedRoute,
+    private router: Router) {
+  }
+
+
 
   ngOnInit(): void {
+    this.routePath = this.route.snapshot["_routerState"].url
+    console.log(this.routePath)
+    if (this.routePath == "/home/connect-database") {
+      this.routeHide = true;
+    } else {
+      this.routeHide = false;
+
+
+    }
   }
 
 }

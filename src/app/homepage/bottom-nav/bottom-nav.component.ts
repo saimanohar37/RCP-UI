@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Router, ActivatedRoute } from "@angular/router";
+
 
 @Component({
   selector: 'app-bottom-nav',
@@ -11,21 +11,12 @@ export class BottomNavComponent implements OnInit {
 
   routePath;
   routeHide: boolean = false;
-  constructor(private route: ActivatedRoute,
-    private router: Router) {
-
-
+  constructor() {
   }
 
 
   ngOnInit() {
-    this.routePath = this.route;
-    console.log(this.routePath)
-    if (this.routePath == "home") {
-      this.routeHide = true;
-    } else {
-      this.routeHide = false;
-    }
+
   }
 
 }
