@@ -12,12 +12,20 @@
     </div>
   </nav>
 <div class="col-12">
+    <div style="text-align: center;">
+        <amplify-authenticator>
+            <amplify-sign-in [handleSubmit]="login()" submit-button-text="Sign in" username-alias="email" slot="sign-in">
     
-        <div class="amplify-block">
-            <amplify-authenticator style="text-align: center;" username-alias="email">
-                <amplify-sign-in></amplify-sign-in>
-            </amplify-authenticator>
-        </div>
+            </amplify-sign-in>
+            <amplify-sign-up username-alias="email" slot="sign-up">
+               
+            </amplify-sign-up>
+            <amplify-forgot-password username-alias="email" slot="forgot-password"></amplify-forgot-password>
+            <amplify-sign-out></amplify-sign-out>
+        </amplify-authenticator>
+    </div>
+    
     
 
 </div>
+

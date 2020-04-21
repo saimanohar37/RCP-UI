@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {AmplifyService} from 'aws-amplify-angular';
+
+
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,9 @@ import {AmplifyService} from 'aws-amplify-angular';
 })
 export class AppComponent {
   title = 'rcp-ui';
-  constructor() {}
+  
+  constructor() {
+    
+  }
 
 }

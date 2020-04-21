@@ -29,7 +29,8 @@ import { ConnectionDetailsComponent } from './homepage/externalds/connection-det
 var routes: Routes = [
   {
     path: "login",
-    component: LoginComponent
+    component: LoginComponent,
+    
   },
   {
     path: "home",
