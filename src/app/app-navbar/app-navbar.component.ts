@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import Auth from '@aws-amplify/auth';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-app-navbar',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppNavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  logout(){
+    Auth.signOut();
+  }
 }

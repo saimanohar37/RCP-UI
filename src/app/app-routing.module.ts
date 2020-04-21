@@ -26,7 +26,8 @@ import { ResetpasswordComponent } from './login/resetpassword/resetpassword.comp
 var routes: Routes = [
   {
     path: "login",
-    component: LoginComponent
+    component: LoginComponent,
+    
   },
   {
     path: "home",
