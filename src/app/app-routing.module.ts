@@ -21,6 +21,7 @@ import { NewreportsComponent } from './homepage/newreports/newreports.component'
 
 import { ConnectDatabaseComponent } from './homepage/externalds/connect-database/connect-database.component';
 import { ConnectionDetailsComponent } from './homepage/externalds/connection-details/connection-details.component';
+import { DatabaseNavigatorComponent } from './homepage/externalds/database-navigator/database-navigator.component';
 
 // import { ResetpasswordComponent } from './login/resetpassword/resetpassword.component';
 
@@ -75,6 +76,10 @@ var routes: Routes = [
       {
         path: "connection-details",
         component: ConnectionDetailsComponent
+      },
+      {
+        path: "database-navigator",
+        component: DatabaseNavigatorComponent
       }
     ]
   },
@@ -111,7 +116,8 @@ export const routingComponents = [
   ExistingreportsComponent,
   NewreportsComponent,
   ConnectDatabaseComponent,
-  ConnectionDetailsComponent
+  ConnectionDetailsComponent,
+  DatabaseNavigatorComponent
   // ResetpasswordComponent,
 ]
 

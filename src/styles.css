@@ -23,11 +23,11 @@
 
 /* Amplify styles */
 
-body {
+/* body {
     font-family: var(--font-family);
-  }
+  } */
   
-  h1 {
+  /* h1 {
     height: 50px;
     font-weight: 500;
   }
@@ -59,7 +59,7 @@ body {
   input:disabled {
     background-color: #EDEDED;
   }
-  
+   */
   .amplify-component {
     display: block;
   }
@@ -631,3 +631,9 @@ body {
     height: 100px;
   }
   
+  /************************************
+  ** Sai CSS Config starts below
+  ************************************/
+
+
+

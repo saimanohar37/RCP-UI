@@ -1,3 +1,174 @@
-<p>
-  connection-details works!
-</p>
+<h5 class="p-3" style="background-color: silver;">
+  Database Connection
+</h5>
+<div class="card border shadow-none">
+  <div style="border-bottom: 2px solid silver;">
+    <h5 class="p-3" style="background-color: white; border-bottom: 2px solid silver;">
+      Connect to Database
+    </h5>
+    <div class="pb-3 pl-3">
+      <span style="font-size: 16px;">
+        <b>Connection Settings</b>
+      </span><br><br>
+      <span style="font-size: 14px;">
+        Database Connection Settings
+      </span>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div class="row">
+        <div class="col-12">
+          <ul class="nav nav-justified nav-tabs" style="background-color: silver; pointer-events: none; "
+            id="justifiedTab" role="tablist">
+            <li class="nav-item">
+              <a aria-controls="home" aria-selected="true" class="nav-link" data-toggle="tab" href="#home"
+                id="home-tab" style="background: white !important;" role="tab">Main</a>
+            </li>
+            <li class="nav-item">
+              <a aria-controls="profile" aria-selected="false" class="nav-link" data-toggle="tab" href="#profile"
+                id="profile-tab" role="tab">PostgreSQL</a>
+            </li>
+            <li class="nav-item">
+              <a aria-controls="contact" aria-selected="false" class="nav-link" data-toggle="tab" href="#contact"
+                id="contact-tab" role="tab">Driver properties</a>
+            </li>
+            <li class="nav-item">
+              <a aria-controls="contact" aria-selected="false" class="nav-link" data-toggle="tab" href="#contact"
+                id="contact-tab" role="tab">SSH</a>
+            </li>
+            <li class="nav-item">
+              <a aria-controls="contact" aria-selected="false" class="nav-link" data-toggle="tab" href="#contact"
+                id="contact-tab" role="tab">Proxy</a>
+            </li>
+            <li class="nav-item">
+              <a aria-controls="contact" aria-selected="false" class="nav-link" data-toggle="tab" href="#contact"
+                id="contact-tab" role="tab">SSL</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="justifiedTabContent">
+            <div aria-labelledby="home-tab" class="tab-pane fade show active" id="home" role="tabpanel">
+              <div class="row p-3">
+                <div class="col-12">
+
+                  <span style="font-size: 16px;">
+                    <b>Server</b>
+                  </span>
+                  <div class="row">
+                    <div class="input-group col-10">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Host:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                      </div>
+
+                      <div class="textfield-box textfield-box-sm">
+                        <input aria-describedby="exampleTextfieldBox11Help" class="form-control"
+                          id="exampleTextfieldBox11" placeholder="" type="text">
+                      </div>
+                    </div>
+                    <div class="input-group col-2">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Port:</span>
+                      </div>
+
+                      <div class="textfield-box textfield-box-sm">
+                        <input aria-describedby="exampleTextfieldBox11Help" class="form-control"
+                          id="exampleTextfieldBox11" placeholder="" type="text">
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                  <div class="row mt-3">
+                    <div class="input-group col-12">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Database:</span>
+                      </div>
+
+                      <div class="textfield-box textfield-box-sm">
+                        <input aria-describedby="exampleTextfieldBox11Help" class="form-control"
+                          id="exampleTextfieldBox11" placeholder="" type="text">
+                      </div>
+                    </div>
+              
+                  </div>
+
+                </div>
+
+
+              </div>
+              <hr>
+              <div class="row p-3">
+                <div class="col-12">
+
+                  <span style="font-size: 16px;">
+                    <b>Authentication</b>
+                  </span>
+                  <div class="row mt-3">
+                    <div class="input-group col-4">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Username:</span>
+                      </div>
+
+                      <div class="textfield-box textfield-box-sm">
+                        <input aria-describedby="exampleTextfieldBox11Help" class="form-control"
+                          id="exampleTextfieldBox11" placeholder="" type="text">
+                      </div>
+                    </div>
+              
+                  </div>
+                  
+                  <div class="row mt-3">
+                    <div class="input-group col-7">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Password:</span>
+                      </div>
+
+                      <div class="textfield-box textfield-box-sm">
+                        <input aria-describedby="exampleTextfieldBox11Help" class="form-control"
+                          id="exampleTextfieldBox11" placeholder="" type="text">
+                      </div>
+                    </div>
+              
+                  </div>
+
+                </div>
+
+
+              </div>
+            </div>
+
+            <!-- <div aria-labelledby="profile-tab" class="tab-pane fade" id="profile" role="tabpanel">...</div>
+            <div aria-labelledby="contact-tab" class="tab-pane fade" id="contact" role="tabpanel">...</div> -->
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="card-footer">
+      <div class="inline-block float-right">
+        <button disabled class="btn btn-sm btn-primary mr-5">
+          Test Connection
+        </button>
+
+        <button (click)="previousScreen()" class="btn btn-sm border btn-outline-info mr-3">
+          Back
+        </button>
+
+
+        <button disabled class="btn btn-sm btn-success mr-3">
+          Next
+        </button>
+
+
+        <button (click)="finishScreen()" class="btn btn-sm btn-success mr-5">
+          Finish
+        </button>
+
+        <button disabled class="btn btn-sm btn-primary mr-5">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mt-5"></div>
