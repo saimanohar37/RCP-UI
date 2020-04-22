@@ -17,7 +17,7 @@ import Amplify from 'aws-amplify';
 import amplify from '../aws-exports';
 import { AuthService } from './services/auth.service';
 import { BottomNavComponent } from './homepage/bottom-nav/bottom-nav.component';
-import { DatabaseNavigatorComponent } from './homepage/externalds/database-navigator/database-navigator.component';
+
 
 Amplify.configure(amplify);
 
@@ -28,7 +28,7 @@ Amplify.configure(amplify);
     routingComponents,
     AppNavbarComponent,
     BottomNavComponent,
-    DatabaseNavigatorComponent,
+    
    
   ],
   imports: [
