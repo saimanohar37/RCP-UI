@@ -16,7 +16,7 @@ import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
 import Amplify from 'aws-amplify';
 import amplify from '../aws-exports';
 import { AuthService } from './services/auth.service';
-import { BottomNavComponent } from './homepage/bottom-nav/bottom-nav.component';
+
 
 
 Amplify.configure(amplify);
@@ -27,9 +27,6 @@ Amplify.configure(amplify);
     AppComponent,
     routingComponents,
     AppNavbarComponent,
-    BottomNavComponent,
-    
-   
   ],
   imports: [
     BrowserModule,
