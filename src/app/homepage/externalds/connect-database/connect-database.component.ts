@@ -19,13 +19,11 @@ export class ConnectDatabaseComponent implements OnInit {
 
   ngOnInit(): void {
     this.routePath = this.route.snapshot["_routerState"].url
-    console.log(this.routePath)
+    // console.log(this.routePath)
     if (this.routePath == "/home/connect-database") {
       this.routeHide = true;
     } else {
       this.routeHide = false;
-
-
     }
   }
 
