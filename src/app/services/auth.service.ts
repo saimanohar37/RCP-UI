@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import Auth from '@aws-amplify/auth';
 import { Hub } from '@aws-amplify/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Router } from '@angular/router';
 
@@ -23,6 +23,7 @@ const initialAuthState = {
   providedIn: 'root'
 })
 export class AuthService {
+
 
   private readonly _authState = new BehaviorSubject<AuthState>(
     initialAuthState
@@ -55,10 +56,10 @@ export class AuthService {
         this.router.navigate(["/home"]);
       } else if(event == 'signOut'){
         console.log(event);
-        this.router.navigate(["/login"]);
+        //this.router.navigate(["/login"]);
       } else {
         this._authState.next(initialAuthState);
-        this.router.navigate(["/login"]);
+        //this.router.navigate(["/login"]);
       }
     })
   }

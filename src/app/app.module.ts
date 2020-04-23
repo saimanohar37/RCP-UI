@@ -41,7 +41,5 @@ Amplify.configure(amplify);
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor(private _auth: AuthService){
 
-  }
 }

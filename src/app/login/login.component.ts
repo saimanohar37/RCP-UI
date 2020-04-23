@@ -17,23 +17,24 @@ export class LoginComponent implements OnInit{
   }
 
   ngOnInit(): void{
-    if(this.isLoggedIn == false){
-      this.router.navigate(["/login"]);
-    } else {
-      //this.router.navigate(["/login"]);
-    }
-  }
- 
-
-
-  login(){
-    console.log(this.isLoggedIn);
     this.authService.isLoggedIn$.subscribe(
       isLoggedIn => (this.isLoggedIn = isLoggedIn)
     );
     this.authService.auth$.subscribe(({id, username, email}) => {
       this.user = {id, username, email};
     });
+  }
+ 
+
+
+  login(){
+    console.log(this.isLoggedIn);
+    /*this.authService.isLoggedIn$.subscribe(
+      isLoggedIn => (this.isLoggedIn = isLoggedIn)
+    );
+    this.authService.auth$.subscribe(({id, username, email}) => {
+      this.user = {id, username, email};
+    });*/
   }
 
 }

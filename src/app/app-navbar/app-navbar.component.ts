@@ -15,6 +15,8 @@ export class AppNavbarComponent implements OnInit {
   }
 
   logout(){
-    Auth.signOut();
+    Auth.signOut().then(() => {
+      this.router.navigate(["/login"]);
+    });
   }
 }
