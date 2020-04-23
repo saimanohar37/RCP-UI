@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, NgZone  } from '@angular/core';
 import Auth from '@aws-amplify/auth';
 import { Hub } from '@aws-amplify/core';
 import { BehaviorSubject, Observable } from 'rxjs';
@@ -35,7 +35,7 @@ export class AuthService {
   /* Observe the isLoggedIn of the auth state */
   readonly isLoggedIn$ = this.auth$.pipe(map(state => state.isLoggedIn));
 
-  constructor(private router: Router) { 
+  constructor(private router: Router, private zone: NgZone) { 
     // Get the user on creation of this service
     Auth.currentAuthenticatedUser().then(
       (user: any) => {
@@ -53,13 +53,13 @@ export class AuthService {
       if(event == 'signIn'){
         this.setUser(data);
         console.log(event);
-        this.router.navigate(["/home"]);
+        this.zone.run(() => this.router.navigate(["/home"]));
       } else if(event == 'signOut'){
         console.log(event);
-        //this.router.navigate(["/login"]);
+        this.zone.run(() => this.router.navigate(["/login"]));
       } else {
         this._authState.next(initialAuthState);
-        //this.router.navigate(["/login"]);
+        this.zone.run(() => this.router.navigate(["/login"]));
       }
     })
   }
